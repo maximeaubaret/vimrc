@@ -30,14 +30,12 @@ Bundle 'kien/ctrlp.vim'
 Bundle "pangloss/vim-javascript"
 Bundle 'jelera/vim-javascript-syntax'
 
-" Tern for Vim
-Bundle 'marijnh/tern_for_vim'
-
 " JSX
 Bundle "mxw/vim-jsx"
 
 " Syntastic
 Bundle "scrooloose/syntastic"
+Bundle "mtscout6/syntastic-local-eslint.vim"
 
 " NERDTree
 Bundle "scrooloose/nerdtree"
@@ -85,8 +83,8 @@ Bundle 'ajh17/Spacegray.vim'
 " Solarized
 Bundle 'altercation/vim-colors-solarized'
 
-" Icon font
-Bundle 'ryanoasis/vim-devicons'
+" Autoclose brackets
+Bundle 'townk/vim-autoclose'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
