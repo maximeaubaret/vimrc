@@ -35,7 +35,7 @@ Bundle "mxw/vim-jsx"
 
 " Syntastic
 Bundle "scrooloose/syntastic"
-Bundle "mtscout6/syntastic-local-eslint.vim"
+Bundle "maximeaubaret/syntastic-local-eslint.vim"
 
 " NERDTree
 Bundle "scrooloose/nerdtree"
