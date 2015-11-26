@@ -89,6 +89,9 @@ Bundle 'altercation/vim-colors-solarized'
 " Autoclose brackets
 Bundle 'townk/vim-autoclose'
 
+" Ident line
+Bundle 'Yggdroot/indentLine'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
