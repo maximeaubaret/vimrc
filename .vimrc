@@ -92,6 +92,9 @@ Bundle 'townk/vim-autoclose'
 " Ident line
 Bundle 'Yggdroot/indentLine'
 
+" Remove trailing whitespace
+Bundle 'ntpeters/vim-better-whitespace'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -144,4 +147,10 @@ inoremap <C-@> <C-Space>
 
 " Enable JSX syntax highlighting for all js files
 let g:jsx_ext_required = 0
+
+" Disable the bell
+set noerrorbells 
+set novisualbell
+set t_vb=
+autocmd! GUIEnter * set vb t_vb=
 
