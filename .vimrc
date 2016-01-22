@@ -17,6 +17,9 @@ Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 " Indent Guide
 Bundle "nathanaelkane/vim-indent-guides"
 
+" YouCompleteMe
+Bundle "Valloric/YouCompleteMe"
+
 " API Blueprint Syntax
 Bundle 'kylef/apiblueprint.vim'
 
@@ -95,6 +98,12 @@ Bundle 'Yggdroot/indentLine'
 " Remove trailing whitespace
 Bundle 'ntpeters/vim-better-whitespace'
 
+" Add TagBar
+Bundle 'majutsushi/tagbar'
+
+" Add Zen mode"
+Bundle 'bilalq/lite-dfm'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -109,8 +118,15 @@ set softtabstop=2
 set shiftwidth=2
 set nowrap
 
+" Bind zen mode
+nnoremap <C-z> :LiteDFMToggle<CR>
+
+" Refresh CtrlP
+nnoremap <C-c> :CtrlPClearAllCaches<CR>
+
 " colorscheme tomorrow-night
 colorscheme spacegray
+" colorscheme github
 
 " Syntastic defaults (from github repo)
 set statusline+=%#warningmsg#
@@ -120,12 +136,16 @@ set statusline+=%*
 " Syntastic use JSXHint for JSX
 let g:syntastic_javascript_checkers = ['eslint']
 
-" Ctrlp 
+" Ctrlp
 let g:ctrlp_map = '<D-O>'
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
 
 " NERDTree shortcut
-map <C-n> :NERDTreeToggle<CR>
+map <C-n>h :NERDTreeToggle<CR>
+
+
+" Open Tagbar
+nmap <C-n>j :TagbarToggle<CR>
 
 " Dash
 nmap <silent> <D-d> <Plug>DashSearch
@@ -148,8 +168,14 @@ inoremap <C-@> <C-Space>
 " Enable JSX syntax highlighting for all js files
 let g:jsx_ext_required = 0
 
+" Deactivate auto YCM
+let g:ycm_auto_trigger = 0
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * StripWhitespace
+
 " Disable the bell
-set noerrorbells 
+set noerrorbells
 set novisualbell
 set t_vb=
 autocmd! GUIEnter * set vb t_vb=
