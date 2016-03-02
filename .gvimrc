@@ -1,5 +1,6 @@
-set guifont=Office\ Code\ Pro:h14
+" set guifont=Office\ Code\ Pro:h14
 " set guifont=Sauce\ Code\ Powerline\ Plus\ Nerd\ File\ Types:h18
+set guifont=Ubuntu\ Mono:h18
 set transparency=10
 
 " Remove the scrollbar

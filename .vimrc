@@ -101,6 +101,9 @@ Bundle 'ntpeters/vim-better-whitespace'
 " Add TagBar
 Bundle 'majutsushi/tagbar'
 
+" Coffee
+Plugin 'kchmck/vim-coffee-script'
+
 " Add Zen mode"
 Bundle 'bilalq/lite-dfm'
 
